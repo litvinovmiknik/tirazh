@@ -1,0 +1,56 @@
+.reviews-slider
+	
+	&__container
+		width: 1200px
+		padding: 50px 0
+		box-sizing: border-box
+		margin: 0 auto
+		display: flex
+		@media (max-width: 1220px)
+			width: 100%
+			padding-left: 10px
+			padding-right: 10px
+			flex-direction: column
+
+	&__col
+		width: 880px
+		display: flex
+		flex-direction: column
+		@media (max-width: 1220px)
+			margin: 0 auto
+		@media (max-width: 920px)
+			width: 580px
+		@media (max-width: 620px)
+			width: 280px
+
+		.bx-wrapper
+			+bx-wrapper()
+
+		.bx-controls-direction
+			+bx-controls-direction(-43px, 0)
+			@media (max-width: 1220px)
+				right: 0
+				left: 0
+				margin: auto
+
+		.bx-prev
+			+bx-prev()
+
+		.bx-next
+			+bx-next()
+
+	&__title
+		margin-bottom: 25px
+		@media (max-width: 1220px)
+			text-align: center
+			margin-bottom: 65px
+	
+	&__slider
+		display: flex
+
+	&__more
+		margin-top: 20px
+		align-self: center
+
+	&__news-slider
+		margin-left: auto

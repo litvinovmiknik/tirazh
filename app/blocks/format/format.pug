@@ -1,0 +1,12 @@
+mixin format()
+	.format&attributes(attributes)
+		._row
+			+subtitle('формат, мм')
+			+help()(class="format__help")
+		+format-standart()
+		._container
+			+radio-button('format', 'format-1', 'Листовка<br>210х99мм', 'checked')(class="format__radio")
+			+radio-button('format', 'format-2', 'Листовка 2<br>210х99мм')(class="format__radio")
+			+radio-button('format', 'format-3', 'Листовка 3<br>210х99мм')(class="format__radio")
+			+radio-button('format', 'format-4', 'Листовка 4<br>210х99мм')(class="format__radio")
+		+format-size()

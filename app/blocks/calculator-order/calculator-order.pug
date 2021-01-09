@@ -1,0 +1,50 @@
+mixin calculator-order()
+	.calculator-order&attributes(attributes)
+		+subtitle('ваш заказ')(class="calculator-order__title")
+		+hr()
+		._info
+			._item
+				._label Изделие:
+				._value Листовка
+			._item
+				._label Формат:
+				._value 210х99мм
+			._item
+				._label Количество на листе:
+				._value 4 экземпляра
+			._item
+				._label Тираж:
+				._value 100
+			._item
+				._label Бумага:
+				._value Мелованная бумага 120 г/м3
+			._item
+				._label Цветность:
+				._value 4+0 с одной стороны
+			._item
+				._label Перфорация:
+				._value Нет
+			._item
+				._label Нумерация:
+				._value Нет
+			._item
+				._label Ламинация:
+				._value Нет
+		+hr()
+		._price
+			._price-label Цена за экземпляр:
+			._price-value 16,35 Р.
+		._total
+			._total-label Стоимость заказа:
+			._total-value 1635.00 Р.
+		+hr()
+		._file
+			._file-status Файл не выбран
+			label._file-label
+				input._file-input(type="file" name="file")
+				._file-button Загрузить свой макет
+		._deadline Примерный срок изготовления составит 3 часа
+		._row
+			+button('заказать')(class="calculator-order__button")
+			button._reset-button(type="reset") сбросить
+		._desc Онлайн калькулятор позволяет рассчитать стоимость печати листовок, флаеров, плакатов, обложек для дисков, наклеек, и другой полиграфической продукции, которая имеет листовой формат размером от А3 и меньше.

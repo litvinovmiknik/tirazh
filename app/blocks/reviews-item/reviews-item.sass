@@ -1,0 +1,74 @@
+.reviews-item
+	width: 280px
+	height: 400px
+	padding: 20px
+	box-sizing: border-box
+	background-color: #fff
+	border-radius: 3px
+	display: flex
+	flex-direction: column
+	align-items: center
+	position: relative
+	
+	&__name
+		color: $dark-blue
+		font: 16px $pb
+
+	&__photo
+		+border-img(5)
+		margin-top: 10px
+
+	&__position
+		color: $dark-gray
+		font: 12px $pr
+		text-align: center
+		margin-top: 10px
+
+	&__text
+		color: $dark-blue
+		font: 14px $pr
+		margin-top: 20px
+
+		&::before
+			content: ''
+			display: inline-block
+			width: 14px
+			height: 10px
+			background-image: url(../images/quotes.png)
+			background-repeat: no-repeat
+			background-position: top
+			margin-right: 9px
+
+		&::after
+			content: ''
+			display: inline-block
+			width: 14px
+			height: 10px
+			background-image: url(../images/quotes.png)
+			background-repeat: no-repeat
+			background-position: bottom
+			margin-left: 9px
+
+	&__link
+		color: $light-blue
+		font: 14px $pb
+		text-decoration: none
+		display: flex
+		align-items: center
+		align-self: flex-start
+		position: absolute
+		bottom: 20px
+		left: 20px
+
+		&::before
+			content: ''
+			display: inline-block
+			width: 16px
+			height: 16px
+			background-image: url(../images/link.png)
+			background-repeat: no-repeat
+			margin-right: 9px
+
+		&:hover
+			color: $orange
+	

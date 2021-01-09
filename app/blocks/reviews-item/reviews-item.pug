@@ -1,0 +1,7 @@
+mixin reviews-item($name, $photo, $position, $text)
+	.reviews-item&attributes(attributes)
+		._name= $name
+		img._photo(src="assets/images/reviews/" + $photo alt="")
+		._position= $position
+		._text= $text
+		a._link(href="#") Оригинал отзыва

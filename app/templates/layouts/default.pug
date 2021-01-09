@@ -1,0 +1,23 @@
+include ../utils/config
+include ../utils/data
+include ../utils/mixins
+include ../utils/blocks
+
+doctype html
+html(lang="ru")
+    head
+        block title
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+        block meta
+        link(rel="icon" type="image/x-icon" href="assets/images/favicon.ico")
+        link(rel="stylesheet" href="assets/styles/libs/slicknav.min.css")
+        block link
+    body
+        block body
+        script(src="assets/scripts/libs/jquery-3.5.1.min.js")
+        script(src="assets/scripts/libs/jquery.slicknav.min.js")
+        block script

@@ -1,0 +1,83 @@
+body
+    font-size: 14px
+    font-family: $pr
+    background-color: $light-gray
+
+.orange
+    color: $orange!important
+
+.panton-black
+    font-family: $pbl!important
+
+.panton-bold
+    font-family: $pb!important
+
+.main
+
+    &__container
+        width: 1200px
+        margin: 0 auto
+        @media (max-width: 1220px)
+            width: 100%
+            padding-left: 10px
+            padding-right: 10px
+            box-sizing: border-box
+
+    &__breadcrumbs
+        margin: 25px 0
+
+.tabs
+
+    &__caption
+        display: flex
+        @media (max-width: 550px)
+            flex-direction: column
+
+    &__item
+        color: #fff
+        font: 12px $pb
+        text-transform: uppercase
+        padding: 12px 40px
+        background-color: $light-blue
+        border-top-left-radius: 3px
+        border-top-right-radius: 3px
+        cursor: pointer
+        margin-right: 2px
+        @media (max-width: 550px)
+            padding-left: 20px
+            padding-right: 20px
+            margin-right: 0
+            border-radius: 0
+
+        &:last-child
+            margin-right: 0
+
+    &__item.active
+        color: $dark-gray
+        background-color: #fff
+
+    &__content
+        display: none
+        width: 100%
+        padding: 20px
+        box-sizing: border-box
+        border-top-right-radius: 3px
+        border-bottom-right-radius: 3px
+        border-bottom-left-radius: 3px
+        background-color: #fff
+
+    &__content.active
+        display: block
+
+.calculation
+    
+    &__tabs
+        width: 100%
+        margin-top: 25px
+
+    &__form
+        display: flex
+        align-items: flex-start
+        margin-bottom: 25px
+        @media (max-width: 1220px)
+            flex-direction: column

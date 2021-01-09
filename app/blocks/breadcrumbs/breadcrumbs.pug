@@ -1,0 +1,8 @@
+mixin breadcrumbs(arr)
+	.breadcrumbs&attributes(attributes)
+		each val, index in arr
+			if index == (arr.length - 1)
+				span._current= val
+			else
+				a._link(href="#")= val
+				span._separator >

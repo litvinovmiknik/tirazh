@@ -1,0 +1,9 @@
+mixin perforation()
+	.perforation&attributes(attributes)
+		._row
+			+subtitle('перфорация')
+			+help()(class="perforation__help")
+		._container
+			+radio-button('perforation', 'perforation-1', 'нет', 'checked')(class="perforation__radio")
+			+radio-button('perforation', 'perforation-2', '1 линия')(class="perforation__radio")
+			+radio-button('perforation', 'perforation-3', '2 линии')(class="perforation__radio")

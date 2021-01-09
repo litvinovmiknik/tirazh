@@ -1,0 +1,15 @@
+mixin thickness()
+	.thickness&attributes(attributes)
+		._row
+			+subtitle('толщина')
+			+help()(class="thickness__help")
+		._container
+			+radio-button('thickness', 'thickness-1', '120', 'checked')(class="thickness__radio")
+			+radio-button('thickness', 'thickness-2', '130')(class="thickness__radio")
+			+radio-button('thickness', 'thickness-3', '140')(class="thickness__radio")
+			+radio-button('thickness', 'thickness-4', '150')(class="thickness__radio")
+			+radio-button('thickness', 'thickness-5', '160')(class="thickness__radio")
+			+radio-button('thickness', 'thickness-6', '170')(class="thickness__radio")
+			+radio-button('thickness', 'thickness-7', '180')(class="thickness__radio")
+			+radio-button('thickness', 'thickness-8', '190')(class="thickness__radio")
+			+radio-button('thickness', 'thickness-9', '200')(class="thickness__radio")

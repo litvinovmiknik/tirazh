@@ -1,0 +1,68 @@
+.portfolio-slider
+	width: 100%
+	background-color: #fff
+
+	&__container
+		width: 1200px
+		padding: 50px 0
+		box-sizing: border-box
+		margin: 0 auto
+		@media (max-width: 1220px)
+			width: 100%
+			padding-left: 10px
+			padding-right: 10px
+	
+	&__title
+		margin-bottom: 25px
+		@media (max-width: 1220px)
+			text-align: center
+			margin-bottom: 65px
+
+	&__slider
+		display: flex
+
+	&__link
+		width: 285px!important
+		text-decoration: none
+		display: block
+		margin-right: 20px
+
+		&:hover::before
+			content: ''
+			display: block
+			width: 285px
+			height: 290px
+			background-color: rgba(0,0,0,0.5)
+			position: absolute
+			background-image: url(../images/watch.png)
+			background-repeat: no-repeat
+			background-position: center
+
+	&__img
+		width: 269px
+		height: 275px
+		+border-img(8)
+
+	.bx-wrapper
+		+bx-wrapper()
+		@media (max-width: 1220px)
+			width: 895px
+			margin-left: auto
+			margin-right: auto
+		@media (max-width: 920px)
+			width: 590px
+		@media (max-width: 620px)
+			width: 285px
+
+	.bx-controls-direction
+		+bx-controls-direction(-43px, 0)
+		@media (max-width: 1220px)
+			right: 0
+			left: 0
+			margin: auto
+
+	.bx-prev
+		+bx-prev()
+
+	.bx-next
+		+bx-next()

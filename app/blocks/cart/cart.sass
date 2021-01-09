@@ -1,0 +1,51 @@
+.cart
+	display: flex
+	align-items: center
+	text-decoration: none
+
+	&__col
+
+		&:first-child
+			position: relative
+			margin-right: 15px
+
+	&__icon-wrap
+		width: 60px
+		height: 60px
+		background-color: #fff
+		border-radius: 60px
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		z-index: 3
+
+	&__icon
+		width: 31px
+		height: 34px
+		background-image: url(../images/cart.png)
+		background-repeat: no-repeat
+		background-position: top
+	
+	&:hover &__icon
+		background-position: bottom
+
+	&__quantity
+		position: absolute
+		top: -15px
+		left: 40px
+		z-index: 2
+		background-color: $light-blue
+		padding: 3px 10px
+		border-radius: 30px
+		color: #fff
+		font: 14px $pb
+
+	&__title
+		color: $gray
+		font: 12px $pb
+		text-transform: uppercase
+
+	&__value
+		color: $light-blue
+		font: 18px $pb

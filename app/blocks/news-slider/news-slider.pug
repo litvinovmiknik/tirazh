@@ -1,0 +1,8 @@
+mixin news-slider()
+	.news-slider&attributes(attributes)
+		+title('новости')(class="news-slider__title") 
+		._slider
+			+news-item('1.jpg', '27.01.2017', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+			+news-item('2.jpg', '27.01.2017', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+			+news-item('3.jpg', '27.01.2017', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+		+more('Все новости', 'news.html')(class="news-slider__more")

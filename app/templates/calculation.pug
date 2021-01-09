@@ -1,0 +1,29 @@
+extends layouts/default
+block title
+    title Расчет стоимости печати
+block link
+    link(rel="stylesheet" href="assets/styles/libs/jquery.jscrollpane.css")
+    link(rel="stylesheet" href="assets/styles/index.css")
+block body
+    +header()
+    main.main
+        ._container
+            +breadcrumbs(['Главная', 'Расчет стоимости печати'])(class="main__breadcrumbs")
+            +title('Расчет стоимости печати')
+            form.calculation__form(action="#" method="post")
+                .tabs.calculation__tabs
+                    ul._caption
+                        li._item.active калькулятор
+                        li._item форматы
+                        li._item подготовка макетов
+                    ._content.active
+                        +calculator()
+                    ._content
+                        +format-price()
+                    ._content
+                        +prepare-layout()
+                +calculator-order()
+    +footer()
+block script
+    script(src="assets/scripts/libs/jquery.jscrollpane.min.js")
+    script(src="assets/scripts/index.js")

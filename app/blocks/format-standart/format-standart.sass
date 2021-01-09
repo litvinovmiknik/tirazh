@@ -1,0 +1,23 @@
+.format-standart
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	
+	&__radio
+		margin: 0 20px 20px 0
+		@media (max-width: 450px)
+			margin-right: 0
+
+		&:last-child
+			margin-right: 0
+		
+		label
+			width: 345px
+			height: 35px
+			color: $light-blue
+			font: 14px $pb
+			text-transform: uppercase
+			border: 1px solid $light-blue
+			@media (max-width: 450px)
+				width: 260px
+				max-width: 345px

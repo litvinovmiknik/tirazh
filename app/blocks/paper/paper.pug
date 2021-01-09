@@ -1,0 +1,19 @@
+mixin paper()
+	.paper&attributes(attributes)
+		._row
+			+subtitle('бумага')
+			+help()(class="paper__help")
+		._container
+			._scroll
+				+radio('paper', 'paper-1', 'Мелованная бумага', 'checked')(class="paper__radio")
+				+radio('paper', 'paper-2', 'Color Copy Clear')(class="paper__radio")
+				+radio('paper', 'paper-3', 'Самоклеющаяся бумага')(class="paper__radio")
+				+radio('paper', 'paper-4', 'Лен')(class="paper__radio")
+				+radio('paper', 'paper-5', 'Sirio')(class="paper__radio")
+				+radio('paper', 'paper-6', 'Touche Cover')(class="paper__radio")
+				+radio('paper', 'paper-7', 'Калька')(class="paper__radio")
+				+radio('paper', 'paper-8', 'Калька')(class="paper__radio")
+				+radio('paper', 'paper-9', 'Калька')(class="paper__radio")
+				+radio('paper', 'paper-10', 'Калька')(class="paper__radio")
+				+radio('paper', 'paper-11', 'Калька')(class="paper__radio")
+			+paper-density()(class="paper__paper-density")

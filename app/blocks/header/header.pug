@@ -1,0 +1,10 @@
+mixin header()
+	header.header&attributes(attributes)
+		+navbar()
+		._container
+			+logo()
+			._row
+				+callback()
+				+address()(class="header__address")
+			+cart()(class="header__cart")
+		+catalog-nav()

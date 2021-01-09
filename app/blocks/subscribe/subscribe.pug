@@ -1,0 +1,7 @@
+mixin subscribe()
+	.subscribe&attributes(attributes)
+		._title Подпишись на новости
+		form._form(action="#" method="post")
+			input._input(type="email" name="email" placeholder="Ваш E-mail")
+			button._button(type="button")
+				img._icon(src="assets/images/check.png" alt="")

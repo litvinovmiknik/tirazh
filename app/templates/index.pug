@@ -1,0 +1,20 @@
+extends layouts/default
+block title
+    title Тираж - оперативная полиграфия
+block link
+    link(rel="stylesheet" href="assets/styles/libs/jquery.bxslider.min.css")
+    link(rel="stylesheet" href="assets/styles/libs/jquery.fancybox.min.css")
+    link(rel="stylesheet" href="assets/styles/index.css")
+block body
+    +header()
+    main.main
+        +banner()
+        +catalog()
+        +portfolio-slider()
+        +about()
+        +reviews-slider()
+    +footer()
+block script
+    script(src="assets/scripts/libs/jquery.bxslider.min.js")
+    script(src="assets/scripts/libs/jquery.fancybox.min.js")
+    script(src="assets/scripts/index.js")

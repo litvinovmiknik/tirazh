@@ -1,0 +1,5 @@
+mixin format-size()
+	.format-size&attributes(attributes)
+		._label Свой размер
+		+input('width', 'Ширина')(class="format-size__input format-size__width")
+		+input('height', 'Высота')(class="format-size__input")

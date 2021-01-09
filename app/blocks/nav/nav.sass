@@ -1,0 +1,42 @@
+.nav
+	display: flex
+	align-items: center
+	@media (max-width: 1220px)
+		padding: 20px 0
+	@media (max-width: 720px)
+		display: none
+	
+	&__link
+		color: $gray
+		text-decoration: none
+		margin: 0 10px
+
+		&:first-child
+			margin-left: 0
+			@media (max-width: 720px)
+				margin-left: 5px
+
+		&:hover
+			color: #fff
+
+.slicknav_menu
+	display: none
+	background-color: $light-blue
+	@media (max-width: 720px)
+		display: block
+
+.slicknav_btn
+	background-color: $orange
+
+.slicknav_icon
+	color: #fff
+
+.slicknav_nav a
+	border-radius: 0
+	border: none
+
+	&:hover
+		border-radius: 0
+		border: none
+		background-color: $orange
+		color: #fff

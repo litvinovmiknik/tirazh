@@ -1,0 +1,15 @@
+mixin edition()
+	.edition&attributes(attributes)
+		._row
+			+subtitle('тираж')
+			+help()(class="edition__help")
+		._container
+			+radio-button('edition', 'edition-1', '100', 'checked')(class="edition__radio")
+			+radio-button('edition', 'edition-2', '300')(class="edition__radio")
+			+radio-button('edition', 'edition-3', '500')(class="edition__radio")
+			+radio-button('edition', 'edition-4', '1000')(class="edition__radio")
+			+radio-button('edition', 'edition-5', '1500')(class="edition__radio")
+			+radio-button('edition', 'edition-6', '2000')(class="edition__radio")
+			+radio-button('edition', 'edition-7', '2500')(class="edition__radio")
+			+radio-button('edition', 'edition-8', '3000')(class="edition__radio")
+			+input('edition', 'Другое')(class="edition__input")

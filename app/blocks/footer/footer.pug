@@ -1,0 +1,24 @@
+mixin footer()
+	footer.footer&attributes(attributes)
+		._container
+			._col
+				a._logo(href="index.html")
+					._name ТИРАЖ
+					._desc Оперативная полиграфия, © 2012 — <span class="year"></span>
+				._address
+					._label Адрес:
+					._text 355042, г. Ставрополь, ул. 50 лет ВЛКСМ, 24 б
+				._phone
+					._label Телефоны:
+					._text <span class="orange">+7 (8652)</span> 72-11-21, 72-47-73, 31-53-97
+			._col
+				+schedule()
+			._col
+				+subscribe()
+				+payment()(class="footer__payment")
+			._col
+				+social()
+				._note  Информация не является публичной офертой. Указанные цены действуют только при оформлении заказа через интернет-магазин
+				a._link(href="privacy-policy.html") Политика конфиденциальности
+		+copyright()
+

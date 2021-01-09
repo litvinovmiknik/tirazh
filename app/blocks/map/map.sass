@@ -1,0 +1,48 @@
+.map
+	width: 50%
+	height: 667px
+	background-image: url(../images/map.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	@media (max-width: 1220px)
+		width: 100%
+	
+	&__marker
+		width: 376px
+		padding: 20px
+		box-sizing: border-box
+		border-radius: 3px
+		background: linear-gradient(to bottom right, $light-orange, $dark-orange)
+		text-align: center
+		position: relative
+		top: 115px
+		left: 125px
+		@media (max-width: 620px)
+			left: auto
+			margin: 0 auto
+		@media (max-width: 420px)
+			width: 100%
+			max-width: 376px
+
+	&__img
+		@media (max-width: 420px)
+			width: 100%
+
+	&__name
+		color: #fff
+		font: 18px $pbl
+		margin-top: 10px
+
+	&__address
+		color: #fff
+		font: 18px $pb
+		margin-top: 10px
+
+	&__pointer
+		position: absolute
+		bottom: -44px
+		right: 0
+		left: 0
+		margin: auto
+		@media (max-width: 620px)
+			display: none

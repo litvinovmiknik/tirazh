@@ -1,0 +1,25 @@
+.news-item
+	width: 280px
+	height: 400px
+	display: flex
+	flex-direction: column
+	text-decoration: none
+	
+	&__img
+		+border-img(8)
+
+	&:hover &__img
+		border: 8px solid $orange
+
+	&__date
+		color: $dark-gray
+		font: 12px $pr
+		margin-top: 10px
+
+	&__text
+		color: $light-blue
+		font: 14px $pb
+		margin-top: 20px
+	
+	&:hover &__text
+		color: $orange

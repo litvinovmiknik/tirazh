@@ -1,0 +1,8 @@
+mixin color()
+	.color&attributes(attributes)
+		._row
+			+subtitle('цветность')
+			+help()(class="color__help")
+		._container
+			+radio-button('color', 'color-1', '4+0<br>с одной стороны', 'checked')(class="color__radio")
+			+radio-button('color', 'color-2', '4+4<br>с двух сторон')(class="color__radio")

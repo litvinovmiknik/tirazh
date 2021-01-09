@@ -1,0 +1,33 @@
+.format-size
+	width: 345px
+	height: 50px
+	border: 1px solid $dark-gray
+	border-radius: 3px
+	margin-bottom: 20px
+	display: flex
+	align-items: center
+	@media (max-width: 450px)
+		width: 162.5px
+		height: auto
+		padding: 10px 0
+		flex-direction: column
+
+	&__label
+		color: $dark-gray
+		font: 14px $pb
+		margin-left: 30px
+		@media (max-width: 450px)
+			margin-left: 0
+			text-align: center
+
+	&__input
+		width: 90px
+		margin-right: 10px
+		@media (max-width: 450px)
+			margin-top: 10px
+			margin-right: 0
+
+	&__width
+		margin-left: auto
+		@media (max-width: 450px)
+			margin-left: 0

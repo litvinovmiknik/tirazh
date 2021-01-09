@@ -1,0 +1,38 @@
+.header
+	display: block
+
+	&__container
+		display: flex
+		align-items: center
+		width: 1200px
+		height: 110px
+		margin: 0 auto
+		@media (max-width: 1220px)
+			width: 100%
+			height: auto
+			flex-direction: column
+			padding: 20px 10px
+			box-sizing: border-box
+
+	&__row
+		display: flex
+		align-items: center
+		margin-left: 35px
+		@media (max-width: 1220px)
+			margin-left: 0
+			margin-top: 20px
+		@media (max-width: 720px)
+			flex-direction: column
+
+	&__address
+		margin-left: 35px
+		@media (max-width: 720px)
+			margin-left: 0
+			margin-top: 20px
+
+	&__cart
+		margin-left: auto
+		@media (max-width: 1220px)
+			margin-left: 0
+			margin-top: 35px
+	

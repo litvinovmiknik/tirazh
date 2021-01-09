@@ -1,0 +1,134 @@
+.calculator-order
+	position: sticky
+	top: 10px
+	width: 430px
+	margin-left: 20px
+	margin-top: 25px
+	@media (max-width: 1220px)
+		margin-left: 0
+		position: relative
+	@media (max-width: 450px)
+		width: 100%
+		max-width: 430px
+
+	&__title
+		margin-bottom: 20px
+
+	&__info
+		padding: 15px 0
+
+	&__item
+		display: flex
+		margin: 5px 0
+
+	&__label
+		color: $dark-blue
+		font: 14px $pb
+		width: 200px
+		@media (max-width: 450px)
+			width: auto
+			flex-grow: 1
+
+	&__value
+		color: $dark-blue
+		font: 14px $pr
+
+	&__price
+		display: flex
+		align-items: baseline
+		margin-top: 20px
+		@media (max-width: 450px)
+			flex-direction: column
+
+	&__price-label
+		color: $dark-blue
+		font: 18px $pr
+		width: 200px
+
+	&__price-value
+		color: $dark-blue
+		font: 18px $pb
+
+	&__total
+		display: flex
+		align-items: baseline
+		padding-bottom: 20px
+		margin-top: 10px
+		@media (max-width: 450px)
+			flex-direction: column
+			margin-top: 20px
+
+	&__total-label
+		color: $dark-blue
+		font: 18px $pb
+		text-transform: uppercase
+		width: 200px
+
+	&__total-value
+		color: $orange
+		font: 24px $pb
+		line-height: 24px
+
+	&__file
+		display: flex
+		align-items: baseline
+		margin-top: 20px
+	
+	&__file-status
+		color: $dark-gray
+		font: 14px $pb
+
+	&__file-input
+		display: none
+
+	&__file-button
+		color: $light-blue
+		font: 14px $pr
+		text-decoration: underline
+		cursor: pointer
+		margin-left: 10px
+
+	&__deadline
+		color: $dark-blue
+		font: 14px $pr
+		margin-top: 20px
+		margin-bottom: 20px
+
+	&__desc
+		color: $dark-gray
+		font: 14px $pr
+		margin-top: 20px
+
+	&__row
+		display: flex
+		@media (max-width: 450px)
+			flex-direction: column
+
+	&__button
+		width: 235px
+		height: 45px
+		@media (max-width: 450px)
+			margin-bottom: 20px
+
+	&__reset-button
+		width: 175px
+		height: 45px
+		display: flex
+		align-items: center
+		justify-content: center
+		color: $dark-blue
+		font: 14px $pb
+		text-align: center
+		text-transform: uppercase
+		background-color: #fff
+		border: 1px solid #fff
+		border-radius: 3px
+		outline: none
+		cursor: pointer
+		margin-left: 20px
+		@media (max-width: 450px)
+			margin-left: 0
+
+		&:hover
+			color: #fff
+			background-color: $orange

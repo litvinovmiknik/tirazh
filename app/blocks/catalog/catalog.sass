@@ -1,0 +1,53 @@
+.catalog
+	
+	&__container
+		width: 1200px
+		padding: 50px 0 30px 0
+		margin: 0 auto
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		@media (max-width: 1220px)
+			justify-content: space-evenly
+			width: 100%
+			padding-left: 10px
+			padding-right: 10px
+			box-sizing: border-box
+
+	&__link
+		text-decoration: none
+		width: 279px
+		height: 245px
+		background-color: #fff
+		border-radius: 3px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		text-align: center
+		padding-bottom: 30px
+		box-sizing: border-box
+		margin-bottom: 20px
+		@media (max-width: 1220px)
+			margin-left: 10px
+			margin-right: 10px
+
+		&:hover
+			+shadow()
+
+	&__icon-wrap
+		height: 190px
+		display: flex
+		align-items: center
+		justify-content: center
+
+	&__name
+		color: $light-blue
+		font: 14px $pb
+		text-transform: uppercase
+
+	&__desc
+		color: $dark-gray
+		font: 12px $pr
+		margin-top: 8px
+	

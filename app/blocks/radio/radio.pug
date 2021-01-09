@@ -1,0 +1,4 @@
+mixin radio($name, $id, $text, $checked)
+	.radio&attributes(attributes)
+		input._input(type="radio" name=$name id=$id checked=$checked)
+		label(for=$id)._label!= $text

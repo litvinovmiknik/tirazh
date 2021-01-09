@@ -1,0 +1,13 @@
+mixin portfolio-slider()
+	section.portfolio-slider&attributes(attributes)
+		._container
+			+title('портфолио')(class="portfolio-slider__title")
+			._slider
+				a._link(data-fancybox="portfolio" href="assets/images/portfolio/1.jpg")
+					img._img(src="assets/images/portfolio/1.jpg" alt="")
+				a._link(data-fancybox="portfolio" href="assets/images/portfolio/2.jpg")
+					img._img(src="assets/images/portfolio/2.jpg" alt="")
+				a._link(data-fancybox="portfolio" href="assets/images/portfolio/3.jpg")
+					img._img(src="assets/images/portfolio/3.jpg" alt="")
+				a._link(data-fancybox="portfolio" href="assets/images/portfolio/4.jpg")
+					img._img(src="assets/images/portfolio/4.jpg" alt="")

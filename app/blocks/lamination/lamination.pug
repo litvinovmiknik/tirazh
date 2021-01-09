@@ -1,0 +1,10 @@
+mixin lamination()
+	.lamination&attributes(attributes)
+		._row
+			+subtitle('ламинация')
+			+help()(class="lamination__help")
+		._container
+			+radio-button('lamination', 'lamination-1', 'нет', 'checked')(class="lamination__radio")
+			+radio-button('lamination', 'lamination-2', 'Глянцевая')(class="lamination__radio")
+			+radio-button('lamination', 'lamination-3', 'Матовая')(class="lamination__radio")
+			+radio-button('lamination', 'lamination-4', 'Slik Feel')(class="lamination__radio")

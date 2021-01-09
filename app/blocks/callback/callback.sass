@@ -1,0 +1,49 @@
+.callback
+	display: flex
+	align-items: center
+	@media (max-width: 450px)
+		flex-direction: column
+		position: relative
+
+	&__row
+		display: flex
+		align-items: center
+		@media (max-width: 450px)
+			flex-direction: row-reverse
+
+	&__col
+		display: flex
+		flex-direction: column
+
+	&__link
+		color: $light-blue
+		font-size: 18px
+		text-decoration: none
+		margin: 3px 0
+
+	&__icon
+		margin-left: 20px
+		@media (max-width: 450px)
+			margin-left: 0
+			margin-right: 15px
+
+	&__button
+		outline: none
+		border: none
+		cursor: pointer
+		width: 147px
+		height: 42px
+		background-color: #fff
+		border-radius: 3px
+		color: $light-blue
+		font: 12px $pb
+		text-transform: uppercase
+		margin-left: 20px
+		@media (max-width: 450px)
+			margin-left: 0
+			margin-top: 20px
+
+		&:hover
+			color: $orange
+			+shadow()
+	

@@ -1,0 +1,39 @@
+# Node.js
+node_modules
+npm-debug.log
+
+# Bower
+bower_components
+
+# Git
+.git
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Extensions
+*.log
+*.zip
+*.rar
+*.gz
+*.exe
+*.pdf
+*.swp
+
+# Editor folders & files
+.idea
+.vscode
+
+# Project folders & files
+.publish
+dist
+
+# symfony/framework-bundle
+.env
+public
+var
+vendor
+
+# symfony/web-server-bundle
+.web-server-pid

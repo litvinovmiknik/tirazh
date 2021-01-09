@@ -1,0 +1,10 @@
+mixin numeration()
+	.numeration&attributes(attributes)
+		._row
+			+subtitle('нумерация')
+			+help()(class="numeration__help")
+		._container
+			+radio-button('numeration', 'numeration-1', 'нет', 'checked')(class="numeration__radio")
+			+radio-button('numeration', 'numeration-2', '1 номер')(class="numeration__radio")
+			+radio-button('numeration', 'numeration-3', '2 номера')(class="numeration__radio")
+			+radio-button('numeration', 'numeration-4', '3 номера')(class="numeration__radio")

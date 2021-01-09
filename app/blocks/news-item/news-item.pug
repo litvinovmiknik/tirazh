@@ -1,0 +1,5 @@
+mixin news-item($img, $date, $text)
+	a.news-item(href="news-detail.html")&attributes(attributes)
+		img._img(src="assets/images/news/" + $img alt="")
+		._date= $date
+		._text= $text
