@@ -1,0 +1,25 @@
+.product-info
+	display: block
+	width: 594px
+	@media (max-width: 620px)
+		width: 100%
+		max-width: 594px
+
+	&__row
+		display: flex
+		@media (max-width: 620px)
+			flex-wrap: wrap
+
+	&__form
+		margin-top: 20px
+	
+	&__button
+		width: 200px
+		height: 40px
+		margin-right: 20px
+		margin-top: 20px
+
+		&:last-child
+			margin-right: 0
+			@media (max-width: 450px)
+				margin-right: 20px

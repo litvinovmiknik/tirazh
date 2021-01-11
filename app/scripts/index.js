@@ -6,6 +6,8 @@ import '../blocks/reviews-slider/reviews-slider.js';
 import '../blocks/news-slider/news-slider.js';
 import '../blocks/help/help.js';
 import '../blocks/paper/paper.js';
+import '../blocks/product-slider/product-slider.js';
+import '../blocks/file-upload/file-upload.js';
 
 // Set current year
 $(function() {

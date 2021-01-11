@@ -1,0 +1,36 @@
+.product-price
+	display: block
+	
+	&__table
+		width: 100%
+
+	&__tr
+
+		&:nth-child(even)
+			background-color: $light-gray
+
+	&__th
+		color: $dark-blue
+		font: 14px $pb
+		text-align: center
+		padding: 5px 10px
+		@media (max-width: 420px)
+			padding-left: 2px
+			padding-right: 2px
+
+	&__td
+		color: $orange
+		font: 14px $pb
+		text-align: center
+		padding: 5px 10px
+		@media (max-width: 420px)
+			padding-left: 2px
+			padding-right: 2px
+
+		&:first-child
+			color: $dark-gray
+
+	&__note
+		color: $dark-blue
+		font: 14px $pr
+		margin-top: 20px

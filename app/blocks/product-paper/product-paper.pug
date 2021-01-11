@@ -1,0 +1,10 @@
+mixin product-paper()
+	.product-paper&attributes(attributes)
+		._label Бумага
+		._col
+			+radio('paper', 'paper-1', 'Мелованная бумага', 'checked')(class="product-paper__radio")
+			+radio('paper', 'paper-2', 'Color Copy 300 г/м2')(class="product-paper__radio")
+			+radio('paper', 'paper-3', 'Фактурная')(class="product-paper__radio")
+			+radio('paper', 'paper-4', 'Металлизированная')(class="product-paper__radio")
+			+radio('paper', 'paper-5', 'Galaxy Metallic')(class="product-paper__radio")
+			+radio('paper', 'paper-6', 'Touche Cover')(class="product-paper__radio")

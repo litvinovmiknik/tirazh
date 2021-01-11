@@ -1,0 +1,15 @@
+mixin product-info()
+	.product-info&attributes(attributes)
+		+product-cost()
+		form._form(action="#" method="post")
+			.tabs
+				ul._caption
+					li._item.active детали
+					li._item цены
+				._content.active
+					+product-detail()
+				._content
+					+product-price()
+			._row
+				+button('заказать')(class="product-info__button")
+				+button('купить в один клик')(class="product-info__button")

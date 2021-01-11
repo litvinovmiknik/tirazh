@@ -1,0 +1,81 @@
+.product-slider
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 586px
+	@media (max-width: 620px)
+		width: 100%
+		max-width: 586px
+
+	&__link
+		text-decoration: none
+
+		&:hover::before
+			content: ''
+			display: block
+			width: 586px
+			height: 459px
+			background-color: rgba(0,0,0,0.5)
+			position: absolute
+			background-image: url(../images/watch.png)
+			background-repeat: no-repeat
+			background-position: center
+			@media (max-width: 620px)
+				width: 100%
+				height: 100%
+
+	&__img
+		display: block
+		+border-img(8)
+		@media (max-width: 620px)
+			width: 100%
+			max-width: 586px
+			box-sizing: border-box
+
+	&__pager
+		display: flex
+		align-items: center
+		box-sizing: border-box
+		margin-top: 20px
+		@media (max-width: 620px)
+			flex-wrap: wrap
+			justify-content: center
+
+	&__pager-link
+		text-decoration: none
+		margin: 0 5px
+		@media (max-width: 620px)
+			margin-bottom: 10px
+
+	&__thumb
+		display: block
+		+border-img(6)
+
+	&__pager-link.active &__thumb
+		border: 6px solid $orange
+	
+	.bx-wrapper
+		+bx-wrapper()
+
+	.bx-controls-direction
+		@media (max-width: 620px)
+			+bx-controls-direction(-38px, 0)
+			left: 0
+			margin: auto
+
+	.bx-prev
+		+bx-prev()
+		top: auto!important
+		bottom: -81px
+		left: 20px!important
+		@media (max-width: 620px)
+			bottom: auto
+			left: 0!important
+
+	.bx-next
+		+bx-next()
+		bottom: -81px
+		right: 20px!important
+		@media (max-width: 620px)
+			bottom: auto
+			right: 0!important

@@ -26,6 +26,11 @@ body
     &__breadcrumbs
         margin: 25px 0
 
+    &__row
+        display: flex
+        @media (max-width: 1220px)
+            flex-direction: column
+
 .tabs
 
     &__caption
@@ -81,3 +86,21 @@ body
         margin-bottom: 25px
         @media (max-width: 1220px)
             flex-direction: column
+
+.product
+
+    &__product-slider
+        margin: 25px 0
+        @media (max-width: 620px)
+            margin-top: 68px
+
+    &__product-info
+        margin: 25px 0 25px 20px
+        @media (max-width: 1220px)
+            margin-left: 0
+
+    &__product-material
+        margin: 25px 0
+
+    &__watched
+        margin-bottom: 25px

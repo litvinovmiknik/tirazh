@@ -1,0 +1,9 @@
+mixin watched()
+	.watched&attributes(attributes)
+		._container
+			+title('вы смотрели')
+			._list
+				+product-item('фольгирование визиток', 'product/1.jpg', '480.00 р.', '100 шт.', 'односторонние')(class="watched__product-item")
+				+product-item('цифровая печать визиток', 'product/2.jpg', '250.00 р.', '100 шт.', 'двухстронние')(class="watched__product-item")
+				+product-item('цифровая печать визиток', 'product/3.jpg', '200.00 р.', '100 шт.', 'односторонние')(class="watched__product-item")
+				+product-item('тиснение визиток', 'product/4.jpg', '1300.00 р.', '100 шт.', 'односторонние')(class="watched__product-item")

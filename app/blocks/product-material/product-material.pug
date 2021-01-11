@@ -1,0 +1,18 @@
+mixin product-material()
+	.product-material&attributes(attributes)
+		._container
+			._col
+				+subtitle('материал')
+				p._text Мелованная бумага, дизайнерские сорта бумаги с тиснением (Prestige, Verona), металлизированным (Sirio Pearl, Shyne, Galaxy Metallic) и латексным напылением (Touche Cover). Плотность используемой бумаги - 80-300 г/м2
+				._note <span class="panton-bold">Примечание.</span> При печати визиток на дизайнерских бумагах к стоимости добавляется цена выбранного типа бумаги:
+				ol._list(type="1")
+					li._item Color Copy 300 г/м2 - 0.35 руб.
+					li._item Фактурные (Prestige, Verona и т.п.) - 0.90 руб.
+					li._item Металлизированные (Sirio Pearl, Shyne и т.п.) - 2.30 руб.
+					li._item Металлизированная (Galaxy Metallic) - 0.90 руб.
+					li._item Touche Cover - 3.30 руб.
+				+subtitle('Срок изготовления')
+				p._text По согласованию с заказчиком от 30 минут до 12 часов. Технически мы способны изготовить 1000 односторонних визитных карточек за 30 минут (!) - от раскладки макета до упакованной продукции.
+			._col
+				+subtitle('видеоматериал')
+				video._video(poster="assets/images/poster.jpg" controls)

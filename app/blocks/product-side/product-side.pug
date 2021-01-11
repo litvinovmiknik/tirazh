@@ -1,0 +1,6 @@
+mixin product-side()
+	.product-side&attributes(attributes)
+		._label Сторона
+		._row
+			+radio-button('side', 'side-1', 'Односторонние', 'checked')(class="product-side__radio")
+			+radio-button('side', 'side-2', 'Двухсторонние')(class="product-side__radio")

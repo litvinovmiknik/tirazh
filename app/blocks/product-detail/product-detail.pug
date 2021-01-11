@@ -1,0 +1,8 @@
+mixin product-detail()
+	.product-detail&attributes(attributes)
+		+product-side()
+		+product-edition()(class="product-detail__edition")
+		._row
+			+product-paper()
+			+product-color()(class="product-detail__color")
+		+file-upload()(class="product-detail__file-upload")

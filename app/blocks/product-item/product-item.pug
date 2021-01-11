@@ -1,0 +1,8 @@
+mixin product-item($title, $img, $price, $count, $type)
+	.product-item&attributes(attributes)
+		._title= $title
+		img._img(src="assets/images/" + $img alt="")
+		._price= $price
+		._count= $count
+		._type= $type
+		a._button(href="product.html") подробнее

@@ -1,0 +1,49 @@
+.product-material
+	display: block
+	width: 100%
+	background-color: #fff
+
+	&__container
+		width: 1200px
+		padding: 20px 0
+		box-sizing: border-box
+		margin: 0 auto
+		display: flex
+		@media (max-width: 1220px)
+			width: 100%
+			padding-left: 10px
+			padding-right: 10px
+			box-sizing: border-box
+			flex-direction: column
+
+	&__col
+
+		&:last-child
+			@media (max-width: 1220px)
+				margin-top: 20px
+
+	&__text
+		color: $dark-blue
+		font: 14px $pr
+		margin-top: 10px
+
+	&__note
+		color: $dark-blue
+		font: 14px $pr
+		margin-top: 10px
+
+	&__list
+		list-style-type: decimal
+		margin: 10px 0 20px 20px
+
+	&__item
+		color: $dark-blue
+		font: 14px $pr
+		margin: 5px 0
+
+	&__video
+		width: 578px
+		margin-top: 20px
+		@media (max-width: 620px)
+			width: 100%
+			max-width: 578px

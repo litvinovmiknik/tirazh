@@ -1,0 +1,56 @@
+.product-item
+	display: flex
+	flex-direction: column
+	width: 285px
+	padding: 20px
+	box-sizing: border-box
+	border-radius: 3px
+	background-color: #fff
+
+	&:hover
+		+shadow()
+	
+	&__title
+		color: $light-blue
+		font: 14px $pb
+		text-transform: uppercase
+
+	&__img
+		+border-img(6)
+		margin-top: 10px
+
+	&__price
+		color: $orange
+		font: 24px $pb
+		line-height: 24px
+		text-transform: uppercase
+		margin-top: 20px
+
+	&__count
+		color: $dark-blue
+		font: 16px $pr
+		margin-top: 5px
+
+	&__type
+		color: $dark-gray
+		font: 14px $pr
+		margin-top: 5px
+
+	&__button
+		width: 145px
+		height: 30px
+		margin-top: 20px
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #fff
+		font: 14px $pb
+		text-align: center
+		text-transform: uppercase
+		text-decoration: none
+		background-color: $orange
+		border: 1px solid $orange
+		border-radius: 3px
+
+		&:hover
+			background-color: $light-orange

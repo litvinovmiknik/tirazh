@@ -38,11 +38,7 @@ mixin calculator-order()
 			._total-label Стоимость заказа:
 			._total-value 1635.00 Р.
 		+hr()
-		._file
-			._file-status Файл не выбран
-			label._file-label
-				input._file-input(type="file" name="file")
-				._file-button Загрузить свой макет
+		+file-upload()(class="calculator-order__file-upload")
 		._deadline Примерный срок изготовления составит 3 часа
 		._row
 			+button('заказать')(class="calculator-order__button")

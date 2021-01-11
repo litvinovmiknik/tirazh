@@ -1,0 +1,23 @@
+.product-color
+	display: block
+	
+	&__label
+		color: $dark-blue
+		font: 14px $pb
+
+	&__container
+		display: flex
+		flex-wrap: wrap
+		margin-top: 10px
+
+	&__radio
+		margin: 0 10px 10px 0
+
+		&:last-child
+			margin-right: 0
+			@media (max-width: 450px)
+				margin-right: 10px
+
+		label
+			width: 41px
+			height: 30px

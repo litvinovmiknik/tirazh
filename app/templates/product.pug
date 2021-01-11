@@ -1,0 +1,23 @@
+extends layouts/default
+block title
+    title Цифровая печать визиток
+block link
+    link(rel="stylesheet" href="assets/styles/libs/jquery.bxslider.min.css")
+    link(rel="stylesheet" href="assets/styles/libs/jquery.fancybox.min.css")
+    link(rel="stylesheet" href="assets/styles/index.css")
+block body
+    +header()
+    main.main
+        ._container
+            +breadcrumbs(['Главная', 'Каталог', 'Визитки', 'Цифровая печать визиток'])(class="main__breadcrumbs")
+            +title('Цифровая печать визиток')
+            ._row
+                +product-slider()(class="product__product-slider")
+                +product-info()(class="product__product-info")
+        +product-material()(class="product__product-material")
+        +watched()(class="product__watched")
+    +footer()
+block script
+    script(src="assets/scripts/libs/jquery.bxslider.min.js")
+    script(src="assets/scripts/libs/jquery.fancybox.min.js")
+    script(src="assets/scripts/index.js")
