@@ -12,6 +12,7 @@
         "@emitty/language-scss": "^2.0.1",
         "autoprefixer": "^9.7.4",
         "babel-loader": "^8.1.0",
+        "browser-sync": "^2.26.13",
         "chai": "^4.2.0",
         "css-mqpacker": "^7.0.0",
         "fs": "0.0.1-security",
